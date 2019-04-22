@@ -1,4 +1,4 @@
- <?
+<?
 /* Переменные для соединения с базой данных */
 $hostname = "localhost";
 $username = "root";
@@ -26,7 +26,13 @@ echo "<html>\n<head>\n";
 echo "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=windows-1251\">\n";
 echo "<title>cloudy</title>\n";
 echo "</head><body>\n";
-echo "<p>Список облачностей<BR><BR>";
+echo "Добавляем название облачности:<br>";
+echo "<form action=\"fins.php\" method=\"GET\"><br>";
+echo "облачность:\n<input type=\"text\" name=\"cloudy\" size=\"20\" maxlength=\"30\">\n\n";
+echo "<input TYPE=\"submit\" VALUE=\"Ok\">\n";
+echo "<input TYPE=\"reset\"  VALUE=\"No\">\n";
+echo "</form>\n";
+echo "<p>Список облачностей<br><br>";
 if ($number != 0) {
   /*echo "<p>Таблица $userstable пуста";
 } else { */
